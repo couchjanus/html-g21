@@ -1,0 +1,227 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+body {
+    color: black;
+    background-color: white;
+    font-family:  "Open Sans", sans-serif;
+    font-size: 1rem; 
+    font-weight: 400;
+    line-height: 1.2; 
+    text-align: left;
+}
+
+a {
+    color: hsla(50, 83%, 54%);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(360, 71%, 66%);
+    text-decoration: underline;
+}
+
+.reset-anchor {
+    color: inherit;
+}
+.reset-anchor:hover,
+.reset-anchor:focus {
+    text-decoration: none;
+}
+/* text */
+.text-white {
+    color:white;
+}
+.text-muted {
+    color: grey;
+}
+.text-gray {
+    color: grey;
+}
+.text-dark {
+    color: black;
+}
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.text-center {
+    text-align: center !important;
+}
+.text-small{
+    font-size: 0.8rem;
+}
+
+/* font */
+.font-weight-bold {
+    font-weight: 700;
+}
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+.font-size--small {
+    font-size: 0.8em;
+}
+  
+.font-size--default {
+    font-size: 1em;
+}
+  
+.font-size--large {
+    font-size: 1.4em;
+}
+
+/* background */
+.bg-white {
+    background-color: #fff !important;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+/* list style */
+
+ul, .list-unstyled {
+    list-style: none;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+/* nav */
+
+.navbar-nav {
+    list-style: none;
+}
+  
+.navbar-nav a {
+    background: white;
+    color: grey;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem; 
+    font-weight: bold;
+}
+  
+.navbar-nav a:hover {
+    color: hsla(50, 83%, 54%);
+}
+
+.navbar-tool{
+    background: transparent;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    color: grey;
+    line-height: inherit;
+    white-space: nowrap;
+    font-weight: 600;
+}
+  
+.navbar-brand:hover,
+.navbar-brand:focus {
+    text-decoration: none;
+}
+
+/* btn */
+.btn {
+    color: #212529;
+    background-color: transparent;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #111111;
+    border-color: #343a40;
+}
+
+.btn-dark:hover {
+    color: #dcb14a;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+.btn-dark:focus,
+.btn-dark.focus {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #999;
+}
+
+
+/* footer */
+/* footer lonk*/
+.footer-link {
+    font-size: 0.85rem;
+    color: #fff;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-socials a i{
+    text-align: center;
+    line-height: 2em;
+    color: #fff;
+}
+  
+.social-icon i.fa-facebook:hover {
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+  
+.social-icon i.fa-twitter:hover{
+    background-color: #55acee;
+    border-color: #55acee;
+}
+    
+.social-icon i.fa-instagram:hover{
+    background-color: #ff0084;
+    border-color: #ff0084;
+}
+    
+.social-icon i.fa-google-plus:hover{
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+}
+    
+.social-icon a.facebook:hover {
+    color: #3b5998;
+}
+  
+.social-icon a.twitter:hover{
+    color: #55acee;
+}
+    
+.social-icon a.instagram:hover{
+    color: #ff0084;
+}
+    
+.social-icon a.google-plus:hover{
+    color: #dd4b39;
+}

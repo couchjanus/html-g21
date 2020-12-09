@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peculiar Shopahlc</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- navbar-->
-    
-    <div>
-        <a href="index.html">
-            <span>Shopaholic</span>
-        </a>
-        <ul>
+    <div class="nav-center">
+        <div class="nav-header">
+            <a class="navbar-brand" href="index.html">
+                <span class="font-weight-bold text-uppercase text-dark">Shopaholic</span>
+            </a>
+        </div>
+
+        <ul class="navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="#shop">Shop</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-                
-        <ul>
-            <li><a href="#"><small>(2)</small></a></li>
-            <li><a href="#"><small>(0)</small></a></li>
-            <li><a href="#">login</a></li>
+        
+        <ul class="navbar-tool">
+            <li>
+                <a href="#"><i class="fas fa-dolly-flatbed text-gray"></i><small class="text-gray">(2)</small></a>
+            </li>
+            <li>
+                <a href="#"><i class="far fa-heart"></i><small class="text-gray">(0)</small></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-user-alt text-gray"></i></a>
+            </li>
         </ul>
     </div>
 
@@ -32,85 +41,130 @@
     </div>
 
     <!-- Categories -->
-    <p>Carefully created collections</p>
-    <h2>Browse our categories</h2>
+    <p class="text-muted text-uppercase">Carefully created collections</p>
+    <h2 class="text-uppercase">Browse our categories</h2>
 
     <!-- Carousel -->
     <div>
     </div>
 
     <!-- Products -->
-    <p>Made the hard way</p>
-    <h2>Top trending products</h2>
+    <p class="text-muted text-uppercase">Made the hard way</p>
+    <h2 class="text-uppercase">Top trending products</h2>
             
     <!-- PRODUCT-->
-    <div>
-        <a href="detail.html"><img src="images/product-1.jpg" alt="..."></a>
-        <ul>
-            <li><a href="#">like</a></li>
-            <li><a href="cart.html">Add to cart</a></li>
-            <li><a href="#">detail</a></li>
-        </ul>
-        <h6> <a href="detail.html">Kui Ye Chen’s AirPods</a></h6>
-        <p>$250</p>
-    </div>
+    
+        <div class="product text-center">
+            <div>
+                <a href="#">
+                    <img class="img-fluid" src="images/product-1.jpg" alt="...">
+                </a>
+                <div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="btn btn-sm btn-outline-dark" href="#"><i class="far fa-heart"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn btn-sm btn-dark" href="#">Add to cart</a>
+                        </li>
+                        <li class="list-inline-item mr-0">
+                            <a class="btn btn-sm btn-outline-dark" href="#"><i class="fas fa-expand"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h6><a class="reset-anchor" href="#">Kui Ye Chen’s AirPods</a></h6>
+            <p class="text-small text-muted">$250</p>
+        </div>
+    
     <!-- PRODUCT-->
     <!-- PRODUCT -->
  
  
     <!-- SERVICES-->
-    <div>
-        <h6>Free shipping</h6>
-        <p>Free shipping worlwide</p>
-        <h6>24 x 7 service</h6>
-        <p>Free shipping worlwide</p>
-        <h6>Festival offer</h6>
-        <p>Free shipping worlwide</p>
+    <div class="text-center">
+        <div>
+            <i class="far fa-heart"></i>
+            <div class="text-left">
+                <h6 class="text-uppercase">Free shipping</h6>
+                    <p class="text-small text-muted">Free shipping worlwide</p>
+            </div>
+        </div>
+        <div>
+            <i class="far fa-heart"></i>
+            <div class="text-left">
+                <h6 class="text-uppercase">24 x 7 service</h6>
+                <p class="text-small text-muted">Free shipping worlwide</p>
+            </div>
+        </div>
+        <div>
+            <i class="far fa-heart"></i>
+            <div class="text-left">
+                <h6 class="text-uppercase">Festival offer</h6>
+                <p class="text-small text-muted">Free shipping worlwide</p>
+            </div>
+        </div>
     </div>
 
     <!-- NEWSLETTER-->
     <!-- Subscribe -->
-    <h2>Let's be friends!</h2>
-    <input type="email" placeholder="Enter your email address">
-    <input type="submit" value="Subscribe">
+    <h2 class="h4">Let's be friends!</h2>
+    <div class="text-center">
+        <form>
+            <label for="from">
+                <i class="fas fa-info-circle"></i>
+            </label>
+            <input type="email" placeholder="Enter your email address" id="from">
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
     <p>Join our mailing list. We write rarely, but only the best content.</p>
-    <a href="" target="_blank">See the last newsletter</a>
+    <p><a href="#" target="_blank">See the last newsletter</a></p>
+    <!-- ./Subscribe -->
   
     <!-- Footer -->
-    <!-- 3 columns -->
     <div>
-        <h6>Customer services</h6>
-        <ul>
-            <li><a href="#">Help &amp; Contact Us</a></li>
-            <li><a href="#">Returns &amp; Refunds</a></li>
-            <li><a href="#">Online Stores</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-        </ul>
-    </div>
-    <div>
-        <h6>Company</h6>
-        <ul>
-            <li><a href="#">What We Do</a></li>
-            <li><a href="#">Available Services</a></li>
-            <li><a href="#">Latest Posts</a></li>
-            <li><a href="#">FAQs</a></li>
-        </ul>
-    </div>
-    <div>
-        <h6>Social media</h6>
-        <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Google</a></li>
-        </ul>
-    </div>
-    <!-- 2 columns -->
-    <div>
-        <p>&copy; 2020 All rights reserved.</p>
-    </div>
-    <div>
-        <p>Template designed by <a href="#">My Temple</a></p>
+        <div class="bg-dark">
+            <!-- 3 columns -->
+            <div>
+                <h6 class="text-uppercase">Customer services</h6>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">Help &amp; Contact Us</a></li>
+                    <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
+                    <li><a class="footer-link" href="#">Online Stores</a></li>
+                    <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-uppercase">Company</h6>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">What We Do</a></li>
+                    <li><a class="footer-link" href="#">Available Services</a></li>
+                    <li><a class="footer-link" href="#">Latest Posts</a></li>
+                    <li><a class="footer-link" href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="text-uppercase">Social media</h6>
+                <ul class="list-unstyled footer-socials social-icon">
+                    <li><a class="footer-link twitter" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a class="footer-link facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a class="footer-link instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a class="footer-link google-plus" href="#"><i class="fab fa-google-plus"></i> Google</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <!-- 2 columns -->
+            <div>
+                <div>
+                    <p class="text-muted">&copy; 2020 All rights reserved.</p>
+                </div>
+                <div>
+                    <p class="text-white reset-anchor">Template designed by <a href="#">My Temple</a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
