@@ -10,164 +10,214 @@
 
 <body>
     <!-- navbar-->
-    <div class="navbar nav-center">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <span class="font-weight-bold text-uppercase text-dark">Shopaholic</span>
-            </a>
-        </div>
+    <header class="bg-white">
+        <nav id="nav">
+            <div class="navbar nav-center">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <span class="font-weight-bold text-uppercase text-dark">Shopaholic</span>
+                    </a>
+                </div>
 
-        <ul class="navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+                <ul class="navbar-nav navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
-        <ul class="navbar-tool">
-            <li>
-                <a href="#"><i class="fas fa-dolly-flatbed text-gray"></i><small class="text-gray">(2)</small></a>
-            </li>
-            <li>
-                <a href="#"><i class="far fa-heart"></i><small class="text-gray">(0)</small></a>
-            </li>
-            <li>
-                <a href="#"><i class="fas fa-user-alt text-gray"></i></a>
-            </li>
-        </ul>
-    </div>
-
-    <!-- HERO SECTION-->
-    <div>
-        <img src="images/slider/1.jpg">
-    </div>
-
-    <!-- Categories -->
-    <p class="text-muted text-uppercase">Carefully created collections</p>
-    <h2 class="text-uppercase">Browse our categories</h2>
-
-    <!-- Carousel -->
-    <div>
-    </div>
-
-    <!-- Products -->
-    <p class="text-muted text-uppercase">Made the hard way</p>
-    <h2 class="text-uppercase">Top trending products</h2>
-
-    <!-- PRODUCT-->
-
-    <div class="product text-center">
-        <div>
-            <a href="#">
-                <img class="img-fluid" src="images/product-1.jpg" alt="...">
-            </a>
-            <div>
-                <ul class="list-inline">
-                    <li class="list-inline-item">
-                        <a class="btn btn-sm btn-outline-dark" href="#"><i class="far fa-heart"></i></a>
+                <ul class="navbar-tool">
+                    <li>
+                        <a href="#"><i class="fas fa-dolly-flatbed text-gray"></i><small class="text-gray">(2)</small></a>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="btn btn-sm btn-dark" href="#">Add to cart</a>
+                    <li>
+                        <a href="#"><i class="far fa-heart"></i><small class="text-gray">(0)</small></a>
                     </li>
-                    <li class="list-inline-item mr-0">
-                        <a class="btn btn-sm btn-outline-dark" href="#"><i class="fas fa-expand"></i></a>
+                    <li>
+                        <a href="#"><i class="fas fa-user-alt text-gray"></i></a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <h6><a class="reset-anchor" href="#">Kui Ye Chen’s AirPods</a></h6>
-        <p class="text-small text-muted">$250</p>
-    </div>
+        </nav>
+    </header>
 
-    <!-- PRODUCT-->
-    <!-- PRODUCT -->
-
-
-    <!-- SERVICES-->
-    <div class="text-center">
-        <div>
-            <i class="far fa-heart"></i>
-            <div class="text-left">
-                <h6 class="text-uppercase">Free shipping</h6>
-                <p class="text-small text-muted">Free shipping worlwide</p>
+    <div class="container">
+        <!-- HERO SECTION-->
+        <section class="hero pb-3">
+            <article class="container slider">
+                <img src="images/slider/1.jpg">  
+                <div class="row px-4">
+                    <div class="col">
+                        <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
+                        <h1 class="h2 text-uppercase mb-3">20% off on new season</h1>
+                        <a class="btn btn-browse" href="shop.html">
+                            <span>Browse collections</span>
+                        </a>
+                    </div>
+                </div>  
+            </article>
+        </section>
+        <!-- ./HERO SECTION-->
+    
+        <section class="pt-5">
+            <!-- Categories -->
+            <header class="text-center">
+                <p class="text-muted text-uppercase mb-1">Carefully created collections</p>
+                <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+            </header>
+        
+            <div class="row">
+                <!-- Carousel -->
+                <div>
+                </div>
             </div>
-        </div>
-        <div>
-            <i class="far fa-heart"></i>
-            <div class="text-left">
-                <h6 class="text-uppercase">24 x 7 service</h6>
-                <p class="text-small text-muted">Free shipping worlwide</p>
-            </div>
-        </div>
-        <div>
-            <i class="far fa-heart"></i>
-            <div class="text-left">
-                <h6 class="text-uppercase">Festival offer</h6>
-                <p class="text-small text-muted">Free shipping worlwide</p>
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- NEWSLETTER-->
-    <!-- Subscribe -->
-    <h2 class="h4">Let's be friends!</h2>
-    <div class="text-center">
-        <form>
-            <label for="from">
-                <i class="fas fa-info-circle"></i>
-            </label>
-            <input type="email" placeholder="Enter your email address" id="from">
-            <input type="submit" value="Subscribe">
-        </form>
-    </div>
-    <p>Join our mailing list. We write rarely, but only the best content.</p>
-    <p><a href="#" target="_blank">See the last newsletter</a></p>
-    <!-- ./Subscribe -->
+        <section class="py-5">
+            <header>
+                <p class="text-muted text-uppercase mb-1">Made the hard way</p>
+                <h2 class="h5 text-uppercase mb-4">Top trending products</h2>
+            </header>
+            
+            <div class="row">
+                <!-- PRODUCT-->
 
+                <div class="product text-center">
+                    <div>
+                        <a href="#">
+                            <img class="img-fluid" src="images/product-1.jpg" alt="...">
+                        </a>
+                        <div>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn btn-sm btn-outline-dark" href="#"><i class="far fa-heart"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn btn-sm btn-dark" href="#">Add to cart</a>
+                                </li>
+                                <li class="list-inline-item mr-0">
+                                    <a class="btn btn-sm btn-outline-dark" href="#"><i class="fas fa-expand"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h6><a class="reset-anchor" href="#">Kui Ye Chen’s AirPods</a></h6>
+                    <p class="text-small text-muted">$250</p>
+                </div>
+
+                <!-- PRODUCT-->
+                <!-- PRODUCT -->
+            </div>
+        </section>
+
+        <!-- SERVICES-->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col mb-3">
+                        <div class="d-inline-block">
+                            <div class="align-items-end">
+                                <i class="far fa-heart"></i>
+                                <div class="text-left ml-3">
+                                    <h6 class="text-uppercase mb-1">Free shipping</h6>
+                                    <p class="text-small mb-0 text-muted">Free shipping worlwide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="d-inline-block">
+                            <div class="align-items-end">
+                                <i class="far fa-heart"></i>
+                                <div class="text-left ml-3">
+                                    <h6 class="text-uppercase mb-1">24 x 7 service</h6>
+                                    <p class="text-small mb-0 text-muted">Free shipping worlwide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-inline-block">
+                            <div class="align-items-end">
+                                <i class="far fa-heart"></i>
+                                <div class="text-left ml-3">
+                                    <h6 class="text-uppercase mb-1">Festival offer</h6>
+                                    <p class="text-small mb-0 text-muted">Free shipping worlwide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER-->
+        <section class="text-center border border-light p-5 my-3">
+            <!-- Subscribe -->
+            <h2 class="h4 mb-3">Let's be friends!</h2>
+            <div class="text-center border border-light p-5">
+                <form class="mb-5">
+                    <label for="from">
+                    <i class="fas fa-info-circle"></i>
+                </label>
+                    <input type="email" placeholder="Enter your email address">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <p class="mt-3">Join our mailing list. We write rarely, but only the best content.</p>
+            <p class="my-3">
+                <a href="" target="_blank">See the last newsletter</a>
+            </p>
+        </section>
+    </div>
     <!-- Footer -->
-    <div>
-        <div class="bg-dark">
-            <!-- 3 columns -->
-            <div>
-                <h6 class="text-uppercase">Customer services</h6>
-                <ul class="list-unstyled">
-                    <li><a class="footer-link" href="#">Help &amp; Contact Us</a></li>
-                    <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
-                    <li><a class="footer-link" href="#">Online Stores</a></li>
-                    <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
-                </ul>
-            </div>
-            <div>
-                <h6 class="text-uppercase">Company</h6>
-                <ul class="list-unstyled">
-                    <li><a class="footer-link" href="#">What We Do</a></li>
-                    <li><a class="footer-link" href="#">Available Services</a></li>
-                    <li><a class="footer-link" href="#">Latest Posts</a></li>
-                    <li><a class="footer-link" href="#">FAQs</a></li>
-                </ul>
-            </div>
-            <div>
-                <h6 class="text-uppercase">Social media</h6>
-                <ul class="list-unstyled footer-socials social-icon">
-                    <li><a class="footer-link twitter" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a class="footer-link facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a class="footer-link instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a class="footer-link google-plus" href="#"><i class="fab fa-google-plus"></i> Google</a></li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <!-- 2 columns -->
-            <div>
-                <div>
-                    <p class="text-muted">&copy; 2020 All rights reserved.</p>
+    <footer class="bg-dark text-white mt-3">
+        <!-- container -->
+        <div class="container py-4">
+            <!-- row -->
+            <div class="row py-5">
+                <!-- 3 columns -->
+                <div class="col mb-3">
+                    <h6 class="text-uppercase">Customer services</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="footer-link" href="#">Help &amp; Contact Us</a></li>
+                        <li><a class="footer-link" href="#">Returns &amp; Refunds</a></li>
+                        <li><a class="footer-link" href="#">Online Stores</a></li>
+                        <li><a class="footer-link" href="#">Terms &amp; Conditions</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <p class="text-white reset-anchor">Template designed by <a href="#">My Temple</a></p>
+                <div class="col mb-3">
+                    <h6 class="text-uppercase">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="footer-link" href="#">What We Do</a></li>
+                        <li><a class="footer-link" href="#">Available Services</a></li>
+                        <li><a class="footer-link" href="#">Latest Posts</a></li>
+                        <li><a class="footer-link" href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6 class="text-uppercase">Social media</h6>
+                    <ul class="list-unstyled footer-socials social-icon">
+                        <li><a class="footer-link twitter" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a class="footer-link facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a class="footer-link instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a class="footer-link google-plus" href="#"><i class="fab fa-google-plus"></i> Google</a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="border-top pt-4">
+                <!-- 2 columns -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <p class="text-muted mb-0">&copy; 2020 All rights reserved.</p>
+                    </div>
+                    <div class="col text-lg-right">
+                        <p class="text-white reset-anchor">Template designed by <a href="#">My Temple</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>
