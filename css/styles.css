@@ -1,9 +1,7 @@
 /* fonts */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
-/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
-/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> */
 
 *,
 *::before,
@@ -12,23 +10,23 @@
 }
 
 body {
-    color: black;
-    background-color: white;
-    font-family:  "Open Sans", sans-serif;
-    font-size: 1rem; 
+    color: var(--black);
+    background-color: var(--white);
+    font-family:  var(--font-primary);
+    font-size: var(--text-base-size); 
     font-weight: 400;
-    line-height: 1.2; 
+    line-height: var(--text-line-height); 
     text-align: left;
 }
 
 a {
-    color: hsla(50, 83%, 54%);
+    color: var(--link-primary);
     background-color: transparent;
     text-decoration: none;
 }
 
 a:hover {
-    color: hsl(360, 71%, 66%);
+    color: var(--link-primary-hover);
     text-decoration: underline;
 }
 
@@ -51,16 +49,17 @@ img {
 
 /* text */
 .text-white {
-    color:white;
+    color:var(--white);
 }
+
 .text-muted {
-    color: grey;
+    color: var(--grey-5);
 }
 .text-gray {
-    color: grey;
+    color: var(--grey-9);
 }
 .text-dark {
-    color: black;
+    color: var(--black);
 }
 .text-uppercase {
     text-transform: uppercase;
@@ -70,7 +69,7 @@ img {
     text-align: center !important;
 }
 .text-small{
-    font-size: 0.8rem;
+    font-size: var(--font-size--small);
 }
 
 /* font */
@@ -81,15 +80,15 @@ img {
     font-weight: 400 !important;
 }
 .font-size--small {
-    font-size: 0.8em;
+    font-size: var(--font-size--small);
 }
   
 .font-size--default {
-    font-size: 1em;
+    font-size: var(--font-size--default);
 }
   
 .font-size--large {
-    font-size: 1.4em;
+    font-size: var(--font-size--large);
 }
 
 /* background */
@@ -293,19 +292,33 @@ nav {
     margin-left: -15px;
 }
 /*  */
+
 .col,
-.col-auto {
+.col-auto,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 }
-/*  */
+
 .col {
     max-width: 100%;
 }
 
 .col-auto {
+    width: auto;
     max-width: 100%;
 }
 
@@ -313,7 +326,62 @@ nav {
     display: block !important;
 }
 
+.col-1 {
+    max-width: calc(100%/12);
+}
+.col-2 {
+    max-width: calc(2*100%/12);
+}
+.col-3 {
+    max-width: calc(3*100%/12);
+}
+.col-4 {
+    max-width: calc(4*100%/12);
+}
+.col-5 {
+    max-width: calc(5*100%/12);
+}
+.col-6 {
+    max-width: calc(6*100%/12);
+}
+.col-7 {
+    max-width: calc(7*100%/12);
+}
+.col-8 {
+    max-width: calc(8*100%/12);
+}
 
+.col-9 {
+    max-width: calc(9*100%/12);
+}
+.col-10 {
+    max-width: calc(10*100%/12);
+}
+.col-11 {
+    max-width: calc(11*100%/12);
+}
+.col-12 {
+    max-width: calc(100%);
+}
+
+/* float */
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.clearfix:after {
+    content     : ".";
+    visibility  : hidden;
+    display     : block;
+    height      : 0;
+    clear       : both;
+ }
+ 
 /* margin padding */
 
 .m-0 {
