@@ -45,6 +45,7 @@ a {
     color: var(--link-primary);
     background-color: transparent;
     text-decoration: none;
+    transition: var(--transition);
 }
 
 a:hover {
@@ -54,6 +55,7 @@ a:hover {
 
 .reset-anchor {
     color: inherit;
+    transition: var(--transition);
 }
 .reset-anchor:hover,
 .reset-anchor:focus {
@@ -232,7 +234,8 @@ nav {
 
 .navbar-tool{
     display: flex;
-    align-items: center; 
+    align-items: center;
+    transition: var(--transition); 
 }
 .navbar-tool li{
     display: inline-flex;
@@ -253,6 +256,7 @@ nav {
     overflow: hidden;
     display: none;
     align-items: center;
+    transition: var(--transition);
 }
   
 .navbar-nav a {
@@ -280,6 +284,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    transition: var(--transition);
 }
 
 @media screen and (min-width: 64em) {
@@ -312,6 +317,7 @@ nav {
         display: inline-block;
         margin-right: 1rem;
         width: 100%;
+        transition: var(--transition);
       }
     .navbar-nav a:hover {
         color: var(--link-primary-hover);
@@ -347,19 +353,38 @@ nav {
 .hero {
     min-height: 25em;
     background-color: transparent;
-    /* background-image: url("../images/bg1.jpg"); */
+    background-image: url("../images/slider/1.jpg");
     background: transtarent;
     overflow: hidden;
     background-size: cover;
 }
 .hero p {
-    padding-top: 6em;
+    padding-top: 2em;
     padding-bottom: 2em;
 }
 .hero h1 {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
-    /* btn */
+
+/* btn-browse */
+
+.btn-browse span {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding: 0.8rem 1.2rem;
+    background-color: #252525;
+    background: linear-gradient(grey,#252525);
+    color: #fff;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in;
+}
+  
+.btn-browse:hover span {
+    padding: 0.8rem 2rem;
+    color: #dcb14a;
+}
+
+/* btn */
 .btn {
     color: #212529;
     background-color: transparent;
@@ -880,6 +905,7 @@ nav {
 .footer-link {
     font-size: 0.85rem;
     color: #fff;
+    transition: all 0.3s;
 }
 
 .footer-link:hover,
@@ -948,3 +974,86 @@ nav {
 .social-icon a.google-plus:hover{
     color: #dd4b39;
 }
+
+
+
+
+/* effect-brackets: Brackets */
+
+.effect-brackets a::before,
+.effect-brackets a::after {
+	display: inline-block;
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.effect-brackets a::before {
+	margin-right: 10px;
+	content: '[';
+	transform: translateX(20px);
+}
+
+.effect-brackets a::after {
+	margin-left: 10px;
+	content: ']';
+	transform: translateX(-20px);
+}
+
+.effect-brackets a:hover::before,
+.effect-brackets a:hover::after,
+.effect-brackets a:focus::before,
+.effect-brackets a:focus::after {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+
+.position-relative {
+    position: relative !important;
+}
+/* сделать все изображения серыми на 40% */
+.product img {
+    filter: grayscale(40%);
+    transition: all 0.3s;
+}
+  
+.product-overlay {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+  
+.product-overlay ul li {
+    transition: all 0.3s;
+}
+  
+.product-overlay ul li:first-of-type {
+    transform: translateX(-10px);
+    opacity: 0;
+}
+  
+.product-overlay ul li:last-of-type {
+    transform: translateX(10px);
+    opacity: 0;
+}
+  
+.product:hover img {
+    opacity: 0.3;
+}
+  
+.product:hover .product-overlay {
+    opacity: 1;
+}
+  
+.product:hover .product-overlay li {
+    opacity: 1;
+    transform: none;
+}
+
