@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Hello, grid!</title>
+  <link rel="stylesheet" href="css/card.css">
+  <style>
+    body {
+      margin: 0;
+    }
+
+    main {
+      margin: auto auto;
+      width: 90%;
+    }
+
+    .grid-container {
+      display: grid;
+      /*  
+      :: grid-template-columns:repeat(3,1fr)
+      :: grid-template-rows:repeat(2,1fr)
+      */
+      grid-template-columns:repeat(3,1fr);
+      grid-template-rows:repeat(2,1fr);
+      /* 
+      Отступы создаются только между колонками и строками, 
+      но не для внешних краев сетки. 
+      */
+      grid-column-gap: 0.8em;
+      grid-row-gap: 1em;
+      /* 
+      :: grid-gap: 0.1em ::  Gap between each grid element  
+       grid-gap: 0.1em;
+      */
+      
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Hello, Grids!</h1>
+  <main>
+    <div class="showcase grid-container">
+      <!-- showcase -->
+      <div class="col-3">
+        <div class="card">
+          <a href="#"><img class="card-img-top" src="images/product.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Item One</a>
+            </h4>
+            <h5>$24.99</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
+              aspernatur!</p>
+          </div>
+          <div class="card-footer">
+            <div class="align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn  btn-info">View Detail</button>
+                <button type="button" class="btn btn-primary">Add To Cart</button>
+              </div>
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <a href="#"><img class="card-img-top" src="images/product.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Item One</a>
+            </h4>
+            <h5>$24.99</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
+              aspernatur!</p>
+          </div>
+          <div class="card-footer">
+            <div class="align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn  btn-info">View Detail</button>
+                <button type="button" class="btn btn-primary">Add To Cart</button>
+              </div>
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <a href="#"><img class="card-img-top" src="images/product.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Item One</a>
+            </h4>
+            <h5>$24.99</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
+              aspernatur!</p>
+          </div>
+          <div class="card-footer">
+            <div class="align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn  btn-info">View Detail</button>
+                <button type="button" class="btn btn-primary">Add To Cart</button>
+              </div>
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <a href="#"><img class="card-img-top" src="images/product.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Item One</a>
+            </h4>
+            <h5>$24.99</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
+              aspernatur!</p>
+          </div>
+          <div class="card-footer">
+            <div class="align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn  btn-info">View Detail</button>
+                <button type="button" class="btn btn-primary">Add To Cart</button>
+              </div>
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <a href="#"><img class="card-img-top" src="images/product.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Item One</a>
+            </h4>
+            <h5>$24.99</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
+              aspernatur!</p>
+          </div>
+          <div class="card-footer">
+            <div class="align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn  btn-info">View Detail</button>
+                <button type="button" class="btn btn-primary">Add To Cart</button>
+              </div>
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+</body>
+
+</html>

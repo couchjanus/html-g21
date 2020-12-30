@@ -39,7 +39,7 @@
                         <a href="#"><i class="far fa-heart"></i><small class="text-gray">(0)</small></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-user-alt"></i></a>
+                        <a href="#openModal"><i class="fas fa-user-alt"></i></a>
                     </li>
                 </ul>
             </div>
@@ -53,14 +53,16 @@
                 <div class="slides">
                     <div class="overflow">
                         <div class="items">
-                            <article class="slide"><img src="images/slider/1.jpg">
+                            <article class="slide">
+                                <img src="images/slider/1.jpg">
                             
                             </article>
-                            <article class="slide"><img src="images/slider/2.jpg">
+                            <article class="slide">
+                                <img src="images/slider/2.jpg">
                                 <div class="row px-4 px-lg-5">
                                     <div class="slide2 col-lg-6">
-                                        <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
-                                        <h1 class="h2 text-uppercase mb-3">20% off on new season</h1>
+                                        <p class="text-muted text-uppercase mb-2">New Inspiration 2020</p>
+                                        <h2 class="text-uppercase mb-3">20% off on new season</h2>
                                         <a class="btn btn-browse" href="shop.html">
                                             <span>Browse collections</span>
                                         </a>
@@ -68,11 +70,12 @@
                                 </div>
                             </article>
                             <article class="slide"><img src="images/slider/3.jpg"></article>
-                            <article class="slide"><img src="images/slider/4.jpg">
+                            <article class="slide">
+                                <img src="images/slider/4.jpg">
                                 <div class="row px-4 px-lg-5">
                                     <div class="slide2 col-lg-6">
-                                        <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
-                                        <h1 class="h2 text-uppercase mb-3">20% off on new season</h1>
+                                        <p class="text-muted text-uppercase mb-2">New Inspiration 2020</p>
+                                        <h2 class="text-uppercase mb-3">20% off on new season</h2>
                                         <a class="btn btn-browse" href="shop.html">
                                             <span>Browse collections</span>
                                         </a>
@@ -373,5 +376,44 @@
             </div>
         </div>
     </footer>
+
+    <!-- modal -->
+
+    <div id="openModal" class="modal">
+        <div class="dialog">
+            <a href="#close" title="Close" class="close">X</a>
+      
+            <div class="col-left">
+                <div class="login-text">
+                <h2>Welcome Back</h2>
+                <p>Create your account.<br>It's totally free.</p>
+                <a class="btn" href="">Sign Up</a>
+                </div>
+            </div>
+      
+            <div class="col-right">
+                <div class="login-form">
+                    <h2>Login</h2>
+                    <form>
+                        <p>
+                        <label>Username or email address<span>*</span></label>
+                        <input type="text" placeholder="Username or Email" required>
+                        </p>
+                        <p>
+                        <label>Password<span>*</span></label>
+                        <input type="password" placeholder="Password" required>
+                        </p>
+                        <p>
+                        <input type="submit" value="Sing In" />
+                        </p>
+                        <p>
+                        <a href="">Forget Password?</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+          
+        </div>
+    </div>
 </body>
 </html>
